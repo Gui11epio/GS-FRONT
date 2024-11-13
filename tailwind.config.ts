@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        limeGreen: '#7ed957',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
