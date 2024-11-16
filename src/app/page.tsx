@@ -20,7 +20,6 @@ export default function Home() {
             Nosso objetivo é conectar empresas recicladoras a pessoas que desejam doar materiais recicláveis, criando um sistema eficiente e incentivador. Dessa forma, buscamos contribuir para a sustentabilidade ambiental e social.
           </p>
         </div>
-
       </main>
     </div>
   );
