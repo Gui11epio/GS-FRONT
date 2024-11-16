@@ -7,6 +7,7 @@ export default function Cabecalho(){
     return(
         <header className="bg-limeGreen flex justify-between items-center p-4 md:p-6 h-52">
             <Image src={logo} alt="logo do iter" className="w-52 h-52"></Image>
+            <h1 className="flex justify-center text-center font-sans">PLATAFORMA DE COLETA COM RECOMPENSA</h1>
             <nav className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
                 <ul className="flex space-x-4" >
                     <li><Link href={'/'} className="hover:text-gray-400">Página inicial</Link></li>

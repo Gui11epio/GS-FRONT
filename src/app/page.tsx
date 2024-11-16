@@ -2,6 +2,10 @@ export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center">
       <main className="w-full max-w-4xl px-4 py-8">
+      
+      <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+          <h1 className="text-3xl font-bold text-limeGreen mb-4">CRIE UM CADASTRO PARA PODER USAR A NOSSA LOJA</h1>
+        </div>
 
         <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
           <h1 className="text-3xl font-bold text-limeGreen mb-4">A ideia do ITER</h1>
