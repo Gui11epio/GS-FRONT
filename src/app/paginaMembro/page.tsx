@@ -13,7 +13,7 @@ export default function PaginaMembros() {
                     <h1 className="text-3xl font-bold text-limeGreen mb-4 text-center">MEMBROS</h1>
                 </div>
 
-                <div className="bg-limeGreen shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
+                <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={pedroFoto} alt="foto pedro" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
                         <h1 className="text-xl font-semibold">
@@ -26,7 +26,7 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
-                <div className="bg-limeGreen shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
+                <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={guiFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
                         <h1 className="text-xl font-semibold">
@@ -39,7 +39,7 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
-                <div className="bg-limeGreen shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
+                <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={ferFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
                         <h1 className="text-xl font-semibold">
