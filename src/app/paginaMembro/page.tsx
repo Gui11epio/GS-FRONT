@@ -8,6 +8,11 @@ export default function PaginaMembros() {
     return (
         <div>
             <main>
+
+                <div className="bg-white shadow-lg rounded-lg p-6">
+                    <h1 className="text-3xl font-bold text-limeGreen mb-4 text-center">MEMBROS</h1>
+                </div>
+
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={pedroFoto} alt="foto pedro" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
@@ -38,10 +43,10 @@ export default function PaginaMembros() {
                     <Image src={ferFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
                         <h1 className="text-xl font-semibold">
-                            Nome: Fernando Fernando Prado <br />RM:
+                            Nome: Fernando Fernando Prado <br />RM:557982
                         </h1>
                         <h2><br />LINK DO LINKEDIN <br /><br /></h2>
-                        <a href="https://www.linkedin.com/in/guilherme-camasmie-laiber-de-jesus-6111a82b6/" className="bg-blue-200 shadow-lg rounded-lg border-2 border-black px-2 py-1">LINKEDIN</a>
+                        <a href="https://www.linkedin.com/in/fernando-prado-41b61524b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="bg-blue-200 shadow-lg rounded-lg border-2 border-black px-2 py-1">LINKEDIN</a>
                         <h2><br />LINK DO GITHUB <br /><br /></h2>
                         <a href="https://github.com/fehunterbr" className="bg-slate-300 shadow-lg rounded-lg border-2 border-black px-2 py-1">GIT HUB</a>
                     </div>
