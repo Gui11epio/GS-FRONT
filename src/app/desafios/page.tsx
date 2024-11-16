@@ -8,18 +8,18 @@ export default function Desafios() {
   const desafios = [
     {
       id: 1,
-      titulo: "Desafio 1: Colete garrafas plasticas",
+      titulo: "Desafio 1: Colete garrafas plásticas",
       descricao: "Colete 10 garrafas. Cadastre-se no posto para completar o desafio.",
     },
     {
       id: 2,
-      titulo: "Desafio 2: Colete materias eletrônicos",
-      descricao: "Colete 10kg de materias eletrônicos. Complete o desafio indo a um posto.",
+      titulo: "Desafio 2: Colete materiais eletrônicos",
+      descricao: "Colete 10kg de materiais eletrônicos. Complete o desafio indo a um posto.",
     },
     {
       id: 3,
       titulo: "Desafio 3: Colete papelão",
-      descricao: "Colete 20 papelões. Complete o desafio indo a um posto..",
+      descricao: "Colete 20 papelões. Complete o desafio indo a um posto.",
     },
   ];
 
@@ -34,7 +34,7 @@ export default function Desafios() {
 
   return (
     <div>
-      <main className="flex flex-col items-center justify-center h-screen space-y-4 bg-gray-300 overflow-y-auto">
+      <main className="flex flex-col items-center justify-center min-h-screen space-y-4 bg-gray-300 overflow-y-auto">
         <h1 className="text-2xl font-bold text-gray-800">Escolha um Desafio!</h1>
         
         <div className="space-y-4 w-full max-w-xl">
@@ -44,7 +44,7 @@ export default function Desafios() {
               <p className="text-gray-600 mt-2">{desafio.descricao}</p>
               <button
                 onClick={() => setActivePopUp(desafio.id)}
-                className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4"
+                className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4 w-full sm:w-auto"
               >
                 Selecionar
               </button>
@@ -54,7 +54,7 @@ export default function Desafios() {
 
         {activePopUp && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg shadow-lg p-6 w-96">
+            <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 sm:w-96">
               <h2 className="text-xl font-bold text-gray-800">
                 {desafios.find((d) => d.id === activePopUp)?.titulo}
               </h2>
@@ -75,23 +75,23 @@ export default function Desafios() {
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-end space-x-2">
+              <div className="mt-4 flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-2">
                 <button
                   onClick={handleClose}
-                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-lg"
+                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-lg w-full sm:w-auto"
                 >
                   Fechar
                 </button>
                 {status < 100 ? (
                   <button
                     onClick={handleComplete}
-                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg"
+                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg w-full sm:w-auto"
                   >
                     Concluir Desafio
                   </button>
                 ) : (
                   <button
-                    className="bg-green-500 text-white py-2 px-4 rounded-lg cursor-not-allowed"
+                    className="bg-green-500 text-white py-2 px-4 rounded-lg w-full sm:w-auto cursor-not-allowed"
                     disabled
                   >
                     Desafio Concluído

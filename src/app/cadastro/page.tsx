@@ -1,7 +1,7 @@
 export default function Cadastro() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-300">
-            <main className="bg-white shadow-lg rounded-lg p-8 w-96 border border-gray-300">
+            <main className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md border border-gray-300">
                 <h1 className="text-2xl font-bold mb-6 text-center text-gray-700">Cadastro</h1>
                 <form className="space-y-4">
                     <div>
