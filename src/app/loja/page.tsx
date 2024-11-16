@@ -8,8 +8,8 @@ export default function Loja(){
 
     return(
         <div>
-            <main className="flex space-x-16">
-            <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex flex-col items-center">
+            <main className="flex space-x-16 bg-gray-300">
+                <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex flex-col items-center">
                     <div className="flex justify-center">
                         <Image
                             src={placaSol}
