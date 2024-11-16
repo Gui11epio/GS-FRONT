@@ -7,7 +7,10 @@ import tomada from "../../image/tomada-inteligente.jpg";
 export default function Loja() {
   return (
     <div className="bg-gray-300 py-8">
+      {/* Contêiner principal com fundo cinza e padding de 8 (py-8) */}
       <main className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4">
+        {/* Main contém uma estrutura flexível que será coluna em dispositivos móveis e linha em dispositivos maiores (md) */}
+
         {/* Placa Solar */}
         <div className="bg-white shadow-lg rounded-lg p-6 border border-black flex flex-col items-center w-full md:w-96">
           <div className="flex justify-center">
@@ -18,6 +21,7 @@ export default function Loja() {
             />
           </div>
           <div className="mt-4 text-center">
+            {/* informações como nome e especificações*/}
             <h1 className="text-xl font-semibold">
               Placa Solar <br /> <br />
               Especificações Elétricas:
@@ -42,6 +46,7 @@ export default function Loja() {
             />
           </div>
           <div className="mt-4 text-center">
+            {/* informações como nome e especificações */}
             <h1 className="text-xl font-semibold">
               Lampada Led <br /> <br />
               Especificações Elétricas:
@@ -64,6 +69,7 @@ export default function Loja() {
             />
           </div>
           <div className="mt-4 text-center">
+            {/* informações como nome e especificações */}
             <h1 className="text-xl font-semibold">
               Tomada Inteligente <br /> <br />
               Especificações Elétricas:

@@ -1,18 +1,21 @@
 "use client";
 import Image from "next/image";
 import guiFoto from "../../image/Guillherme.jpeg";
-import pedroFoto from "../../image/Pedro.jpeg"
-import ferFoto from "../../image/Fernando.jpeg"
+import pedroFoto from "../../image/Pedro.jpeg";
+import ferFoto from "../../image/Fernando.jpeg";
 
 export default function PaginaMembros() {
     return (
         <div className="bg-gray-300">
+            {/* Contêiner principal com fundo cinza */}
             <main className="bg-gray-300">
-
+                {/* Subcontêiner com fundo branco, sombra e bordas arredondadas */}
                 <div className="bg-white shadow-lg rounded-lg p-6">
+                    {/* Título centralizado e com estilo personalizado */}
                     <h1 className="text-3xl font-bold text-limeGreen mb-4 text-center">MEMBROS</h1>
                 </div>
 
+                {/* Seção do membro Pedro */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={pedroFoto} alt="foto pedro" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
@@ -26,6 +29,7 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
+                {/* Seção do membro Guilherme */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={guiFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
@@ -39,8 +43,9 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
+                {/* Seção do membro Fernando */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
-                    <Image src={ferFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
+                    <Image src={ferFoto} alt="foto fernando" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
                         <h1 className="text-xl font-semibold">
                             Nome: Fernando Fernando Prado <br />RM: 557982 <br />Turma: 1tdspi
