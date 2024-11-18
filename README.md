@@ -1,7 +1,16 @@
-Para rodar o programa na própria máquina:
+## Para rodar o programa na própria máquina:
+
+No terminal
+````bash
 - npm intall .
+````
+
 -(depois)
+
+````bash
 - npm run dev
+````
+Para rodar localmente
 
 Para rodar no vercel:
 - https://gs-front-blue.vercel.app/
