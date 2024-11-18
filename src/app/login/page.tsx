@@ -9,34 +9,34 @@ export default function Login() {
     const [success, setSuccess] = useState<string>(""); // Tipagem explícita para o estado
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); // Previne o comportamento padrão do formulário
-
-        setError(""); // Limpa mensagens de erro anteriores
-        setSuccess(""); // Limpa mensagens de sucesso anteriores
-
+        e.preventDefault();
+    
         try {
             const response = await fetch("http://localhost:8080/cadastro/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ email, password: senha }), // Envia os dados como JSON
+                body: JSON.stringify({ 
+                    email, // Certifique-se de que essas variáveis contêm os dados corretos
+                    senha
+                }),
             });
-
-            if (response.ok) {
-                const data = await response.json();
-                setSuccess(data.message); // Exibe mensagem de sucesso
-                // Redirecionar para outra página, se necessário
-                // router.push("/dashboard");
-            } else {
+    
+            if (!response.ok) {
                 const errorData = await response.json();
-                setError(errorData.message); // Exibe mensagem de erro
+                setError(errorData.error || "Erro ao realizar login");
+                return;
             }
+    
+            const data = await response.json();
+            setSuccess("Login realizado com sucesso!");
         } catch (error) {
-            console.error("Erro no login:", error); // Loga o erro no console para depuração
-            setError("Ocorreu um erro ao realizar o login."); // Mensagem genérica para o usuário
+            setError("Erro de rede ou de conexão com o servidor.");
         }
     };
+    
+    
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-300">
