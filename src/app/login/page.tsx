@@ -1,42 +1,40 @@
 "use client";
+
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Login() {
-    const [email, setEmail] = useState<string>(""); // Tipagem explícita para o estado
-    const [senha, setSenha] = useState<string>(""); // Tipagem explícita para o estado
-    const [error, setError] = useState<string>(""); // Tipagem explícita para o estado
-    const [success, setSuccess] = useState<string>(""); // Tipagem explícita para o estado
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const [errorMessage, setErrorMessage] = useState(""); // Para exibir mensagens de erro
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-    
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault(); // Previne o comportamento padrão do formulário
+
         try {
             const response = await fetch("http://localhost:8080/cadastro/login", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ 
-                    email, // Certifique-se de que essas variáveis contêm os dados corretos
-                    senha
-                }),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, senha }),
             });
-    
+
             if (!response.ok) {
-                const errorData = await response.json();
-                setError(errorData.error || "Erro ao realizar login");
+                const errorText = await response.text(); // Lê o texto de erro
+                setErrorMessage(errorText); // Atualiza o estado com a mensagem de erro
+                console.error("Erro no login:", errorText);
                 return;
             }
-    
-            const data = await response.json();
-            setSuccess("Login realizado com sucesso!");
+
+            const data = await response.json(); // Lê os dados da resposta
+            console.log("Usuário autenticado:", data);
+
+            // Redirecionar ou realizar alguma ação após o login bem-sucedido
+            alert("Login realizado com sucesso!");
         } catch (error) {
-            setError("Erro de rede ou de conexão com o servidor.");
+            // Log de erros inesperados
+            console.error("Erro ao fazer a requisição:", error);
+            setErrorMessage("Erro inesperado ao realizar o login. Tente novamente.");
         }
     };
-    
-    
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-300">
@@ -51,11 +49,10 @@ export default function Login() {
                         <input
                             type="email"
                             id="email"
-                            placeholder="Digite seu email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)} // Atualiza o estado do email
+                            placeholder="Digite seu email"
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            required
                         />
                     </div>
 
@@ -66,11 +63,10 @@ export default function Login() {
                         <input
                             type="password"
                             id="senha"
-                            placeholder="Digite sua senha"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)} // Atualiza o estado da senha
+                            placeholder="Digite sua senha"
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            required
                         />
                     </div>
 
@@ -82,14 +78,15 @@ export default function Login() {
                     </button>
                 </form>
 
-                {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
-                {success && <p className="text-green-500 text-sm mt-4">{success}</p>}
+                {errorMessage && ( // Exibe a mensagem de erro, se houver
+                    <p className="text-red-500 text-sm mt-4 text-center">{errorMessage}</p>
+                )}
 
                 <p className="text-sm text-gray-500 text-center mt-4">
                     Não tem uma conta?{" "}
-                    <Link href="/cadastro" className="text-blue-500 hover:underline">
+                    <a href="/cadastro" className="text-blue-500 hover:underline">
                         Cadastre-se
-                    </Link>
+                    </a>
                 </p>
             </main>
         </div>
