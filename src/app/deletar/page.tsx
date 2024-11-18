@@ -84,7 +84,7 @@ export default function PaginaDeletar() {
 
                     <button
                         type="submit"
-                        className="w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition"
+                        className="border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition"
                     >
                         Excluir Conta
                     </button>

@@ -71,7 +71,7 @@ export default function Login() {
 
                     <button
                         type="submit"
-                        className="w-full bg-limeGreen text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+                        className="w-full border border-black bg-limeGreen text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition"
                     >
                         Entrar
                     </button>
@@ -96,14 +96,14 @@ export default function Login() {
                 <div className="mt-4 flex flex-col space-y-4">
                     <a
                         href="/atualizar" // Link para a página de atualização
-                        className="w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition text-center"
+                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition text-center"
                     >
                         Atualizar Dados
                     </a>
 
                     <a
                         href="/deletar" // Link para a página de exclusão
-                        className="w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition text-center"
+                        className=" border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition text-center"
                     >
                         Deletar Conta
                     </a>

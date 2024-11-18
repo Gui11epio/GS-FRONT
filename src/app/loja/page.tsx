@@ -20,8 +20,8 @@ export default function Loja() {
               className="h-64 w-52 object-cover rounded-lg"
             />
           </div>
-          <div className="mt-4 text-center">
-            {/* informações como nome e especificações*/}
+          <div className="mt-4 text-center flex flex-col justify-between flex-grow">
+            {/* informações como nome e especificações */}
             <h1 className="text-xl font-semibold">
               Placa Solar <br /> <br />
               Especificações Elétricas:
@@ -33,6 +33,9 @@ export default function Loja() {
               <br /> - Eficiência do módulo: 20,7%
               <br /> - Tolerância de potência: 0~+5 W
             </h1>
+            <button className="mt-auto border border-black bg-limeGreen text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+              Comprar
+            </button>
           </div>
         </div>
 
@@ -45,7 +48,7 @@ export default function Loja() {
               className="h-64 w-52 object-cover rounded-lg"
             />
           </div>
-          <div className="mt-4 text-center">
+          <div className="mt-4 text-center flex flex-col justify-between flex-grow">
             {/* informações como nome e especificações */}
             <h1 className="text-xl font-semibold">
               Lampada Led <br /> <br />
@@ -56,6 +59,9 @@ export default function Loja() {
               <br /> - Frequência: 50/60 Hz
               <br /> - Eficiência energética: Classe A
             </h1>
+            <button className="mt-auto border border-black bg-limeGreen text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+              Comprar
+            </button>
           </div>
         </div>
 
@@ -68,7 +74,7 @@ export default function Loja() {
               className="h-64 w-52 object-cover rounded-lg"
             />
           </div>
-          <div className="mt-4 text-center">
+          <div className="mt-4 text-center flex flex-col justify-between flex-grow">
             {/* informações como nome e especificações */}
             <h1 className="text-xl font-semibold">
               Tomada Inteligente <br /> <br />
@@ -78,6 +84,9 @@ export default function Loja() {
               <br /> - Tensão: 100V - 240V (Bivolt)
               <br /> - Frequência: 50/60 Hz
             </h1>
+            <button className="mt-auto bg-limeGreen border border-black text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+              Comprar
+            </button>
           </div>
         </div>
       </main>

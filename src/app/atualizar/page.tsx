@@ -131,7 +131,7 @@ export default function UpdatePage() {
 
                     <button
                         type="submit"
-                        className="w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition"
+                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition"
                     >
                         Atualizar
                     </button>
