@@ -83,8 +83,7 @@ export default function UpdatePage() {
                             value={id}
                             onChange={(e) => setId(e.target.value)}
                             placeholder="Digite o ID do usuário"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                     </div>
 
                     <div>
@@ -97,8 +96,7 @@ export default function UpdatePage() {
                             value={nome}
                             onChange={(e) => setNome(e.target.value)}
                             placeholder="Digite o novo nome"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                     </div>
 
                     <div>
@@ -111,8 +109,7 @@ export default function UpdatePage() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Digite seu novo email"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                     </div>
 
                     <div>
@@ -125,14 +122,12 @@ export default function UpdatePage() {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                             placeholder="Digite sua nova senha"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                     </div>
 
                     <button
                         type="submit"
-                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition"
-                    >
+                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition">
                         Atualizar
                     </button>
                 </form>

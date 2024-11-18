@@ -51,8 +51,7 @@ export default function Login() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Digite seu email"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                     </div>
 
                     <div>
@@ -71,8 +70,7 @@ export default function Login() {
 
                     <button
                         type="submit"
-                        className="w-full border border-black bg-limeGreen text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition"
-                    >
+                        className="w-full border border-black bg-limeGreen text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition">
                         Entrar
                     </button>
                 </form>
@@ -96,15 +94,13 @@ export default function Login() {
                 <div className="mt-4 flex flex-col space-y-4">
                     <a
                         href="/atualizar" // Link para a página de atualização
-                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition text-center"
-                    >
+                        className="border border-black w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition text-center">
                         Atualizar Dados
                     </a>
 
                     <a
                         href="/deletar" // Link para a página de exclusão
-                        className=" border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition text-center"
-                    >
+                        className=" border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition text-center">
                         Deletar Conta
                     </a>
                 </div>

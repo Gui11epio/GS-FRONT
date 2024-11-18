@@ -78,14 +78,12 @@ export default function PaginaDeletar() {
                             value={id}
                             onChange={(e) => setId(e.target.value)} // Atualiza o estado do ID
                             placeholder="Digite o ID do usuário"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
-                        />
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"/>
                     </div>
 
                     <button
                         type="submit"
-                        className="border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition"
-                    >
+                        className="border border-black w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition">
                         Excluir Conta
                     </button>
                 </form>

@@ -49,8 +49,7 @@ export default function Desafios() {
                 <p className="text-gray-600 mt-2">{desafio.descricao}</p>
                 <button
                     onClick={() => setAtivarPopUp(desafio.id)}
-                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4 w-full sm:w-auto"
-                >
+                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4 w-full sm:w-auto">
                     Selecionar
                 </button>
                 </div>
@@ -73,32 +72,29 @@ export default function Desafios() {
                     <span>{status}%</span>
                     </div>
                     <div className="w-full bg-gray-300 rounded-full h-4">
-                    <div
-                        className="bg-green-500 h-4 rounded-full"
-                        style={{ width: `${status}%` }}
-                    ></div>
+                        <div
+                            className="bg-green-500 h-4 rounded-full"
+                            style={{ width: `${status}%` }}>
+                        </div>
                     </div>
                 </div>
 
                 <div className="mt-4 flex flex-col sm:flex-row justify-end space-y-4 sm:space-y-0 sm:space-x-2">
                     <button
                     onClick={handleClose}
-                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-lg w-full sm:w-auto"
-                    >
+                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-lg w-full sm:w-auto">
                     Fechar
                     </button>
                     {status < 100 ? (
                     <button
                         onClick={handleComplete}
-                        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg w-full sm:w-auto"
-                    >
+                        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg w-full sm:w-auto">
                         Concluir Desafio
                     </button>
                     ) : (
                     <button
                         className="bg-green-500 text-white py-2 px-4 rounded-lg w-full sm:w-auto cursor-not-allowed"
-                        disabled
-                    >
+                        disabled>
                         Desafio Concluído
                     </button>
                     )}
