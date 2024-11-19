@@ -15,7 +15,7 @@ export default function PaginaMembros() {
                     <h1 className="text-3xl font-bold text-limeGreen mb-4 text-center">MEMBROS</h1>
                 </div>
 
-                {/* Seção do membro Pedro */}
+                {/* Seção Pedro */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={pedroFoto} alt="foto pedro" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
@@ -29,7 +29,7 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
-                {/* Seção do membro Guilherme */}
+                {/* Seção Guilherme */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={guiFoto} alt="foto guilherme" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">
@@ -43,7 +43,7 @@ export default function PaginaMembros() {
                     </div>
                 </div>
 
-                {/* Seção do membro Fernando */}
+                {/* Seção Fernando */}
                 <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-black flex items-center">
                     <Image src={ferFoto} alt="foto fernando" className="h-64 w-52 object-cover rounded-lg" />
                     <div className="ml-6">

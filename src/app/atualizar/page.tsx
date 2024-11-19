@@ -9,7 +9,7 @@ interface Cadastro {
     email: string;
 }
 
-export default function UpdatePage() {
+export default function PaginaAtualizar() {
     const [id, setId] = useState<number | string>(""); // Armazenar o ID do usuário a ser atualizado
     const [nome, setNome] = useState(""); // Nome do usuário a ser atualizado
     const [email, setEmail] = useState(""); // Novo email
