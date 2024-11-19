@@ -2,7 +2,7 @@
 
 No terminal
 ````bash
-- npm intall .
+- npm install .
 ````
 
 -(depois)
